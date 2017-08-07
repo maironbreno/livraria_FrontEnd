@@ -1,0 +1,24 @@
+{
+  "name": "app-exemplo",
+  "authors": [
+    "maironbreno <maironunes@outlook.com>"
+  ],
+  "description": "Testando AngularJs",
+  "main": "main",
+  "keywords": [
+    "livraria"
+  ],
+  "license": "MIT",
+  "homepage": "home",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.5"
+  }
+}
