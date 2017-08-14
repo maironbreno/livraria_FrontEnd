@@ -11,8 +11,8 @@ gulp.task('test', testTaskDependencies, test);
 gulp.task('lint', ['codeStaticAnalysis']);
 
 function test(done){
-  new karmaServer({
-    configFile: __dirname + '/../karma.conf.js',
-    singleRun: true
-  }, done).start();
+  // new karmaServer({
+  //   configFile: __dirname + '/../karma.conf.js',
+  //   singleRun: true
+  // }, done).start();
 }

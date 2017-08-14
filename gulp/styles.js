@@ -12,8 +12,7 @@ var browserSync = require('browser-sync');
 gulp.task('scss', scss);
 gulp.task('appCSS', ['scss'], appCSS);
 gulp.task('vendorCSS', vendorCSS);
-gulp.task('highContrastCss', highContrastCss);
-gulp.task('styles', ['vendorCSS', 'appCSS', 'highContrastCss']);
+gulp.task('styles', ['vendorCSS', 'appCSS']);
 
 function appCSS(){
   return gulp.src(conf.paths.css.app)
@@ -48,10 +47,4 @@ function scss(){
     .pipe(autoprefixer())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(conf.paths.scss.dist.path));
-}
-
-function highContrastCss(){
-  return gulp.src(conf.paths.css.other.highContrast)
-    .pipe(cleanCSS({ processImport: false }))
-    .pipe(gulp.dest(conf.paths.css.dist.path));
 }

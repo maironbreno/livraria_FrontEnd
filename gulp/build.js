@@ -5,7 +5,7 @@ var path = require('path');
 var conf = require('./conf').conf;
 
 gulp.task('clean', clean);
-gulp.task('build', ['environmentSetup', 'html', 'scripts', 'styles', 'assets']);
+gulp.task('build', ['html', 'scripts', 'styles', 'assets']);
 
 function clean(){
   var del = require('del');
